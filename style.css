@@ -1,0 +1,105 @@
+/* ブラウザで設定されているスタイルのリセット・共通設定 */
+/* 消さないでください */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+form,
+input,
+textarea,
+select,
+button {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+/* スタイルのリセット終了 */
+
+/* サイドバーとメインコンテンツを包むための要素のスタイルを書いてください */
+.dashboard-container{
+display: flex;
+height:100vh;
+}
+
+/* サイドバーに関連するスタイルを書いてください */
+.sidebar{
+  width:256px;
+  background-color:#f5f5f5;
+  border-right:1px solid #e0e0e0;
+  display:flex;
+  flex-direction:column;
+  flex-shrink:0;
+}
+.sidebar-header{
+  padding:20px;
+  border-bottom:1px solid #e0e0e0;
+}
+.sidebar-home{
+  font-size:1.25rem;
+  font-weight:600;
+  color:#4f7cac;
+  display: flex;
+  align-items: center;
+  gap:8px;
+  text-decoration:none;
+}
+/* メインコンテンツに関連するスタイルを書いてください */
+.main-cpntent{
+  flex:1;
+}
+.section-header{
+  background-color: white;
+  padding:32px;
+  border-bottom:1px solid #e0e0e0;
+  text-align: center;
+}
+.profile-circle{
+  width:96px;
+  height:96px;
+  background-color:#4f7cac;
+  border-radius:50%;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  margin:0px auto 24px;
+}
+.profile-circle span {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+.section-title{
+  font-size:1.5rem;
+  font-weight: 600;
+  color:#2f2f2f;
+  margin:8px;
+}
+.section-subtitle{
+  font-size:1.125rem;
+  color:#757575;
+  margin:24px;
+}
+.section-body {
+  padding: 32px;
+}
+
+.section-description {
+  max-width: 672px;
+  margin: 0 auto;
+  color: #757575;
+  padding: 32px;
+}
+.section-description p {
+  margin-bottom: 16px;
+}
